@@ -8,9 +8,7 @@ class AuthenticatesManyTest < ActiveSupport::TestCase
     set_session_for(zack)
     
     assert !binary_logic.user_sessions.find
-    
     set_session_for(ben)
-    
     assert binary_logic.user_sessions.find
   end
 end
